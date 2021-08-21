@@ -6,4 +6,4 @@
 
 ## estudiantes:
 - Jose Moreno
-
+- Sandra Vergara    
