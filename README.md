@@ -10,6 +10,17 @@
 - Camila Fuentes
 - Camilo Andres Barbosa Gracia
 - Yoshua Romero
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
 - Fredy Armando Romero
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
+=======
+- Fredy Armando Romero
+- Sandra Vergara
+>>>>>>> Stashed changes
 
