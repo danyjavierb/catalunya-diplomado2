@@ -19,8 +19,3 @@
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
 
-=======
-- Fredy Armando Romero
-- Sandra Vergara
->>>>>>> Stashed changes
-
