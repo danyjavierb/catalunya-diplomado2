@@ -5,6 +5,8 @@
 - Dany Javier Bautista
 
 ## estudiantes:
+
 - Jose Moreno
-- Camilo Medina 
+- Andres Gonzalez
+- Camilo Medina
 - Camila Fuentes
