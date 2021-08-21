@@ -7,3 +7,4 @@
 ## estudiantes:
 - Jose Moreno
 - Camilo Medina 
+- Camila Fuentes
