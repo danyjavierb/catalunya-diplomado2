@@ -13,4 +13,4 @@
 - Yoshua Romero
 - Fredy Armando Romero
 - Croin el mimo
-- dany338
+- Daniel Gallo
