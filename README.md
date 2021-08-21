@@ -14,3 +14,5 @@
 - Fredy Armando Romero
 - Croin el mimo
 - Daniel Gallo
+- Sandra Vergara
+
