@@ -10,6 +10,5 @@
 - Camila Fuentes
 - Camilo Andres Barbosa Gracia
 - Yoshua Romero
-- Fredy Armando Romero
 
 
