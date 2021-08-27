@@ -10,9 +10,12 @@
 - Camila Fuentes
 - Camilo Andres Barbosa Gracia
 - Yoshua Romero
-- Fredy Armando Romero
-
-<<<<<<< HEAD
+<<<<<<< Updated upstream
 =======
+<<<<<<< Updated upstream
+- Fredy Armando Romero
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
->>>>>>> parent of 07ddfaa... Auto stash before revert of "Revert "Merge pull request #9 from danyjavierb/upd-minombre-FR""
