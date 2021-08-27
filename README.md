@@ -15,6 +15,7 @@
 - Croin el mimo
 - Daniel Gallo
 - Sandra Vergara
+- Johan Legarda 
 
 
 
