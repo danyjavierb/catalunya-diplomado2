@@ -15,14 +15,18 @@
 =======
 <<<<<<< Updated upstream
 - Fredy Armando Romero
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-=======
 - Croin el mimo
 - Daniel Gallo
 - Sandra Vergara
->>>>>>> svergara-readme
 
+=======
+- Fredy Armando Romero
+- Sandra Vergara
+>>>>>>> Stashed changes
+
+
+
+
+
+
+- John Felaifel
