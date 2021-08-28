@@ -44,3 +44,6 @@ if (!Number.isNaN(edad)) {
 // pregunten la edad de un usuario y si es menor de edad digan q no puede acceder al sitio
 // si es mayor de edad, un mensaje de bienvenida con el nombre
 // si no ingresa un numero un mensaje de error o advertencia
+
+// pregunten por un numero al usuario o muestren si es par o impar "el numero x es ???"
+// en caso de no ingresar un numero un error
