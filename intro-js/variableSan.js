@@ -6,7 +6,7 @@ const edad = Number(prompt("Ingrese edad"));
 // si es mayor de edad, un mensaje de bienvenida con el nombre
 // si no ingresa un numero un mensaje de error o advertencia
 
-if(!isNaN(edad)){
+/*if(!isNaN(edad)){
     //No ingresó un numero
     if(edad > 18){
         alert(`Bienvenido ${nombre} usted es mayor de edad!`);
@@ -30,7 +30,9 @@ if(!isNaN(edad)){
     }
 }else{
     alert("No ingresó numero");
-}
+}*/
+
+
 
 
 
