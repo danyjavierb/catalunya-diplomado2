@@ -1,6 +1,6 @@
 
-const nombre = prompt("Ingrese su nombre");
-const edad = Number(prompt("Ingrese edad"));
+//const nombre = prompt("Ingrese su nombre");
+//const edad = Number(prompt("Ingrese edad"));
 
 // pregunten la edad de un usuario y si es menor de edad digan q no puede acceder al sitio
 // si es mayor de edad, un mensaje de bienvenida con el nombre
@@ -31,6 +31,38 @@ const edad = Number(prompt("Ingrese edad"));
 }else{
     alert("No ingresó numero");
 }*/
+
+// una rutina que recibe un numero e imprime lo siguienten el la terminal
+// user input: 7
+// *  1
+// **
+// ***
+// ****
+// *****
+// ******
+// ******* 7
+// *******
+// ******
+// *****
+// ****
+// ***
+// **
+// *
+const numero = Number(prompt("Ingrese un número"));
+const numero2 = numero * 2;
+
+for(let i=0; i<= numero2 - 1; i++){
+    for(let j=0; j<=numero - 1; j++){
+        let cad = cad + '*';
+        console.log(cad);
+    }
+}
+
+
+
+
+//Un promgrama que sume los multiplos de 3 y 5 hasta donde el usuario escoja
+//user input: 10
 
 
 
