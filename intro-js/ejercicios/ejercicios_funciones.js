@@ -50,7 +50,7 @@ console.log(capitalizar("la vaca lola tiene manchas y no tiene cola")) */
 
 // SUma todos los números hasta el 100
 
-const SumarNumerosPrimos = (numero) => {
+/* const SumarNumerosPrimos = (numero) => {
     result = 0
     for (let x = 1; x <= numero; x++) {
         if (x**2 > numero) {
@@ -60,11 +60,31 @@ const SumarNumerosPrimos = (numero) => {
         }
 
     }
-}
+} 
 
 console.log(SumarNumerosPrimos(100))
+*/
 
 // Funcion usando arrays que alterne mayusculas
-const MayusAlter = (palabra) => {
-    for (let x = 0; x <= )
+const MayusAlter = (letra, x, vector) => {
+    console.log(letra)
+    console.log(x)
+    console.log(vector)
+    result = ""
+    if ((x > 0) && ((x % 2) == 0)) {
+        result = letra.toUpperCase();
+    } else if (x == 0) {
+        result = letra.toUpperCase();
+    } else
+        result = letra;
+    
+    vector[x] = result
+    console.log(result)
+
 }
+
+const palabra = "gregorio".split("");
+palabra.forEach(MayusAlter);
+console.log(palabra.join(""))
+
+// 
