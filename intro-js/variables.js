@@ -136,6 +136,84 @@ if (!Number.isNaN(numero)) {
 // ***
 // **
 // *
+//Jhon Grisales
+// const numero = parseInt( prompt("Ingrese un numero"));
+
+// let imp
+// imp= ""
+// for (let i = 0; i < numero+1; i++) {
+//     for (let j = 1; j < i; j++) {
+//         imp = imp + "*";
+//     }
+//     console.log(imp);
+//     imp = "";
+// }
+//  let impd
+//  impd=""
+// for (let i = numero+1; i > 0; i--) {
+//     for (let j = i; j > 1; j--) {
+//         impd = impd + "*";
+//     }
+//     console.log(impd);
+//     impd = ""
+// }
+
+// sandra vergara
+
+// const numero = Number(prompt("Ingrese un número"));
+// const numero2 = numero * 2;
+// let cad = "";
+// for(let i=1; i<= numero2; i++){
+//     if(i>numero){
+//         cad = cad.substring(1);
+//     }else{
+//         cad = cad + '*';
+//     }
+//     console.log(cad);
+// }
+
+//Andres Gonzalez
+
+// let numero = Number(prompt("escriba un numero"));
+// for (let i = 1; i <= numero; i++) {
+//   let asteriscos = "";
+//   for (let j = 1; j <= i; j++) {
+//     asteriscos += "*";
+
+//     console.log(asteriscos);
+//   }
+// }
+
+// for (let i = numero; i >= 1; i--) {
+//   let asteriscos = "";
+//   for (let j = 1; j <= i; j++) {
+//     asteriscos += "*";
+//   }
+//   console.log(asteriscos);
+// }
+
+//Jose Moreno
+
+// let numero = parseInt(Number(prompt("Ingrese un número")));
+// if (!Number.isNaN(numero)) {
+//   for (let x = 1; x <= numero; x++) {
+//     console.log("*".repeat(x));
+//   }
+//   for (let x = numero; x >= 0; x--) {
+//     console.log("*".repeat(x));
+//   }
+// } else {
+//   alert("Debes ingresar un numero");
+// }
+
+const nivelesPiramide = parseInt(prompt("ingrese numero"));
+let inicioPiramide = "";
+let finalPiramide = "";
+for (let as = "*"; as.length < nivelesPiramide; as += "*") {
+  inicioPiramide += as + "\n";
+  finalPiramide = `${as}\n` + finalPiramide;
+}
+console.log(inicioPiramide + finalPiramide);
 
 // un programa que sume los multiplos de 3 y 5 hasta donde el usuario escoja
 // user input: 10
@@ -150,6 +228,25 @@ if (!Number.isNaN(numero)) {
 //9 14 + 9
 //10
 
+// Edda Urdaneta
+alert("Vamos a calcular un numero multiplo de 3 y 5");
+
+let num = parseInt(prompt("Digite un numero"));
+let sum = 0;
+if (!Number.isNaN(num)) {
+  for (let i = 0; i < num; i++) {
+    if (i % 3 == 0 || i % 5 == 0) {
+      console.log("num" + i);
+      sum = sum + i;
+      console.log("suma " + sum);
+    }
+  }
+} else {
+  alert(" ingrese un num");
+}
+
+alert(`El numero es ${num}, es multiplo del 3 y 5, la suma es ${sum}`);
+
 /**
  * Escribe un programa que use console.log para imprimir todos los números de 1 a 100, 
  * con dos excepciones. Para números divisibles por 3, imprime "Fizz" en lugar del número, 
@@ -163,6 +260,18 @@ if (!Number.isNaN(numero)) {
     elimina un porcentaje significativo de candidatos a programadores. 
     Así que si la puedes resolver, tu valor en el mercado laboral acaba de subir).
  */
+// Susana Aguilera
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 == 0) {
+    console.log("Fizz");
+  } else if (i % 5 == 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
 
 // ingrese n
 // nxn
@@ -177,3 +286,21 @@ if (!Number.isNaN(numero)) {
         # # # #  7
 
 */
+// John Dairo
+const iter = Number(prompt("Ingrese el número"));
+if (!Number.isNaN(iter)) {
+  let buffer = "";
+  for (let i = 0; i <= iter; i++) {
+    for (let j = 0; j <= iter; j++) {
+      if (i % 2 == 0) {
+        buffer += " #";
+      } else {
+        buffer += "# ";
+      }
+    }
+    console.log(`${buffer} ${i} \n`);
+    buffer = "";
+  }
+} else {
+  alert("No ingresó un número correcto");
+}
