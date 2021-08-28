@@ -27,11 +27,8 @@ console.log(typeof nombreEstudiante); */
 
 //const edad = parseInt(prompt("ingrese edad"));
 /* const nombre = prompt("Ingrese su nombre");
-<<<<<<< HEAD
-const edad = Number(prompt("ingrese edad"));
-=======
 const edad = Number(prompt("ingrese edad")); */
->>>>>>> 3cb1966... [ADD]Añadido ejercicio 1.
+
 
 // if(Number.isNaN(edad)) {
 //     // no ingreso un numero
@@ -48,8 +45,8 @@ if (!Number.isNaN(edad)) {
 // pregunten la edad de un usuario y si es menor de edad digan q no puede acceder al sitio
 // si es mayor de edad, un mensaje de bienvenida con el nombre
 // si no ingresa un numero un mensaje de error o advertencia
+// José Moreno
 /* const nombre = prompt("Ingresa tu nombre");
-
 const edad = Number(prompt("Para acceder debes indicar tu edad"));
 
 if (Number.isNaN(edad))
@@ -244,6 +241,20 @@ for (let as = "*"; as.length < nivelesPiramide; as += "*") {
 }
 console.log(inicioPiramide + finalPiramide);
 
+/* 
+let numero = parseInt(Number(prompt("Ingrese un número")))
+if (!Number.isNaN(numero)) {
+  for (let x= 1; x <= numero; x++) {
+    console.log("*".repeat(x))
+  }
+  for (let x=numero; x >= 0; x--) {
+    console.log("*".repeat(x))
+  }
+} else {
+  alert("Debes ingresar un numero")
+}
+ */
+
 // un programa que sume los multiplos de 3 y 5 hasta donde el usuario escoja
 // user input: 10
 //1
@@ -302,6 +313,20 @@ for (let i = 1; i <= 100; i++) {
   }
 }
 
+/* 
+for (let x = 1; x <= 100; x++){
+   if (((x % 3) == 0) && ((x % 5) == 0)) {
+     console.log("FizzBuzz");
+   } else if ((x % 3) == 0) {
+     console.log("Fizz")
+   } else if ((x % 5) == 0) {
+     console.log("Buzz")
+   } else {
+     console.log(x)
+   }
+ }    
+ */
+
 // ingrese n
 // nxn
 /*       01234567
@@ -315,6 +340,7 @@ for (let i = 1; i <= 100; i++) {
         # # # #  7
 
 */
+<<<<<<< HEAD
 // John Dairo
 const iter = Number(prompt("Ingrese el número"));
 if (!Number.isNaN(iter)) {
@@ -332,4 +358,19 @@ if (!Number.isNaN(iter)) {
   }
 } else {
   alert("No ingresó un número correcto");
+=======
+
+let dimension = parseInt(Number(prompt("Ingrese un número")))
+let texto = ""
+if (!Number.isNaN(dimension)) {
+  for (let x = 1; x <= dimension; x++) {
+      for (let y = 1; y <= dimension; y++) {
+        texto += ((x % 2) == 0) ? " #": "# "
+      }
+      console.log(`${texto}\n`)
+      texto = ""
+  }
+} else {
+  alert("Debes ingresar un número")
+>>>>>>> 8b6967a... [UPD] Ejercicios resueltos.
 }
