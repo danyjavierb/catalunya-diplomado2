@@ -118,13 +118,13 @@ if(!isNaN(numeroMult)){
 
 */
 
-const n = Number(prompt("Ingrese un número 1"));
+/*const n = Number(prompt("Ingrese un número 1"));
 
 for(let i=0;i<=n-1;i++){
 
         console.log(`# # # #${i}`);     
     
-}
+}*/
 
 
 
