@@ -127,6 +127,17 @@ const alternancia = (miTexto) => {
 //   return resultado;
 // }
 
+// funcion que retorne elementos no repetidos
+const unico = (array) => {
+  let res = [];
+  array.forEach((element, ind, a) => {
+    if (!(a.indexOf(element) != a.lastIndexOf(element))) {
+      res.push(element);
+    }
+  });
+  return res;
+};
+
 // console.log(noRepe([1, 1, 2, 3, 4, 4]));
 
 //dividir un array por pares e impares
