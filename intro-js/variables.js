@@ -27,14 +27,18 @@ console.log(typeof nombreEstudiante); */
 
 //const edad = parseInt(prompt("ingrese edad"));
 /* const nombre = prompt("Ingrese su nombre");
+<<<<<<< HEAD
 const edad = Number(prompt("ingrese edad"));
+=======
+const edad = Number(prompt("ingrese edad")); */
+>>>>>>> 3cb1966... [ADD]Añadido ejercicio 1.
 
 // if(Number.isNaN(edad)) {
 //     // no ingreso un numero
 // }else {
 //     console.log(edad);
 // }
-
+/* 
 if (!Number.isNaN(edad)) {
   alert(`el joven ${nombre} tiene ${edad} años`);
 } else {
@@ -44,6 +48,31 @@ if (!Number.isNaN(edad)) {
 // pregunten la edad de un usuario y si es menor de edad digan q no puede acceder al sitio
 // si es mayor de edad, un mensaje de bienvenida con el nombre
 // si no ingresa un numero un mensaje de error o advertencia
+/* const nombre = prompt("Ingresa tu nombre");
+
+const edad = Number(prompt("Para acceder debes indicar tu edad"));
+
+if (Number.isNaN(edad))
+{
+  alert(`${nombre} Debes ingresar un número para tu edad`);
+} else if (edad < 18) {
+  alert(`Lo siento ${nombre} no puedes acceder`);
+} else {
+  alert(`Bienvenido a nuestro sitio web ${nombre}`);
+}
+
+// Numeros
+
+const numero = Number(prompt("Ingrese un número"));
+
+if (!Number.isNaN(numero)) {
+  par = ((numero % 2) == 0) ? "Par": "Impar"
+  alert(`El número ${numero} es ${par}`);
+} else {
+  alert("No ingresaste un número");
+   
+} */
+
 // Jonnatan
 /* const nombre = prompt("ingrese su nombre");
 
