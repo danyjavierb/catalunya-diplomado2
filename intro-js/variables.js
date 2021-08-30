@@ -340,37 +340,4 @@ for (let x = 1; x <= 100; x++){
         # # # #  7
 
 */
-<<<<<<< HEAD
-// John Dairo
-const iter = Number(prompt("Ingrese el número"));
-if (!Number.isNaN(iter)) {
-  let buffer = "";
-  for (let i = 0; i <= iter; i++) {
-    for (let j = 0; j <= iter; j++) {
-      if (i % 2 == 0) {
-        buffer += " #";
-      } else {
-        buffer += "# ";
-      }
-    }
-    console.log(`${buffer} ${i} \n`);
-    buffer = "";
-  }
-} else {
-  alert("No ingresó un número correcto");
-=======
 
-let dimension = parseInt(Number(prompt("Ingrese un número")))
-let texto = ""
-if (!Number.isNaN(dimension)) {
-  for (let x = 1; x <= dimension; x++) {
-      for (let y = 1; y <= dimension; y++) {
-        texto += ((x % 2) == 0) ? " #": "# "
-      }
-      console.log(`${texto}\n`)
-      texto = ""
-  }
-} else {
-  alert("Debes ingresar un número")
->>>>>>> 8b6967a... [UPD] Ejercicios resueltos.
-}
