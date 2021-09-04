@@ -59,16 +59,97 @@ const programadores = [
 ];
 
 // function que retorne un programador por id
-
+/** */
+/**
+ * Por Camilo Andres Barbosa Gracia
+ * 
+ * @param {{id:number}[]} list 
+ * @param {number} id 
+ */
+/** */
+const programadorById = (list, id) => {
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].id == id) return list[i];
+  }
+  return null;
+}
+/**/
 //todos los programadores menores a una edad
-
+/**
+ * Por Camilo Andres Barbosa Gracia
+ * 
+ * @param {{edad:number}[]} list 
+ * @param {number} edad 
+ * @returns 
+ */
+/** */
+const programadoresMenoresDeUnaEdad = (list, edad) => {
+  const result = [];
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].edad < edad) result.push(list[i]);
+  }
+  return result;
+}
+/** */
 // una funcion que retorne los nombres
 // traerNombres(programadores) // ["Jose Moreno",...]
-
+/**
+ * 
+ * @param {{nombre: string}[]} list 
+ * @returns 
+ */
+/** */
+const traerNombres = (list) => {
+  const result = [];
+  for (let i = 0; i < list.length; i++) {
+    result.push(list[i].nombre);
+  }
+  return result;
+}
+/** */
 // buscar programadores por lenguaje
 // programadoresPorLenguaje(programadores,"R") [{id: 4,...}]
-
+/**
+ * Por Camilo Andres Barbosa Gracia
+ * 
+ * @param {{lenguajes: string[]}} list 
+ * @param {string} lang 
+ * @returns 
+ */
+/** */
+const programadoresPorLenguaje = (list, lang) => {
+  const result = [];
+  for (let i = 0; i < list.length; i++) {
+    for (let j = 0; j < list[i].lenguajes.length; j++) {
+      if (list[i].languajes[j] == lang) {
+        result.push(list[i]);
+        break;
+      }
+    }
+  }
+  return result;
+}
+/** */
 // funcion que retorne un array de objetos solo con
 // las propiedades que se pases como parametro
 // generarObjetos(programadores, ['id','nombre'])
 // [ { id: "xxxx", nombre: "xxxxx"}   ]
+/**
+ * Por Camilo Andres Barbosa Gracia
+ * @param {[]} list 
+ * @param {[]} props 
+ * @returns 
+ */
+/** */
+const generarObjetos = (list, props) => {
+  const result = [];
+  for (let i in list) {
+    const prog = {};
+    for (let j in props) {
+      prog[props[j]] = list[i][props[j]];
+    }
+    result.push(prog)
+  }
+  return result;
+}
+/** */
