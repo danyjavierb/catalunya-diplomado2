@@ -39,16 +39,14 @@ const DividirParesImpares = (array) => {
     newArray.push(arrayImpar);
     return newArray;
 }
-
 const ParImpar = (numero) => {
 if(numero % 2 == 0){
     return true;
 }
 return false;
 }
-
-/*const array = [1,2,3,4,5,6,7,8,9];
-console.log(DividirParesImpares(array));*/
+const array = [1,2,3,4,5,6,7,8,9];
+console.log(DividirParesImpares(array));
 
 const array = [1,1,2,2,3];
 console.log(NoRepetidos(array));
