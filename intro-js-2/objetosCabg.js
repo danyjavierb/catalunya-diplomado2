@@ -66,7 +66,6 @@ const programadores = [
  * @param {{id:number}[]} list 
  * @param {number} id 
  */
-/** */
 const programadorById = (list, id) => {
   for (let i = 0; i < list.length; i++) {
     if (list[i].id == id) return list[i];
@@ -82,7 +81,6 @@ const programadorById = (list, id) => {
  * @param {number} edad 
  * @returns 
  */
-/** */
 const programadoresMenoresDeUnaEdad = (list, edad) => {
   const result = [];
   for (let i = 0; i < list.length; i++) {
@@ -98,7 +96,6 @@ const programadoresMenoresDeUnaEdad = (list, edad) => {
  * @param {{nombre: string}[]} list 
  * @returns 
  */
-/** */
 const traerNombres = (list) => {
   const result = [];
   for (let i = 0; i < list.length; i++) {
@@ -116,7 +113,6 @@ const traerNombres = (list) => {
  * @param {string} lang 
  * @returns 
  */
-/** */
 const programadoresPorLenguaje = (list, lang) => {
   const result = [];
   for (let i = 0; i < list.length; i++) {
@@ -140,7 +136,6 @@ const programadoresPorLenguaje = (list, lang) => {
  * @param {[]} props 
  * @returns 
  */
-/** */
 const generarObjetos = (list, props) => {
   const result = [];
   for (let i in list) {
