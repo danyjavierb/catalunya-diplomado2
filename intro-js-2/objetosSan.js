@@ -93,7 +93,7 @@ console.log(obtenerProgramadorMenorEdad(programadores));
         programadores.forEach(element => {
             propiedades.forEach(props => {
                 const key = Object.keys(programadores);
-                if(key == propiedades) {
+                if(props == element) {
                     result.push(element);
                 }    
             })             

@@ -139,7 +139,7 @@ const traerPedidosUsario = (idUsuario) => {
     return result;
 };
 
-console.log(traerPedidosUsario(3));
+
 
 //funcion que retorne el promedio de gasto de un usuario
 
