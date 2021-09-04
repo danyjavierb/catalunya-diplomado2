@@ -1,4 +1,4 @@
-const programadores = [{
+/* const programadores = [{
     id: 1,
     nombre: "Jose Moreno",
     lenguajes: ["Kotlin", "C", "JS"],
@@ -22,7 +22,7 @@ const programadores = [{
     lenguajes: ["Python", "Scala", "JS", "R"],
     edad: 28,
     perfil: () => "Programadora BigData y ML"
-}]
+}] */
 
 //Traer programador por ID usando find
 
@@ -59,7 +59,7 @@ console.log(SumEdades(programadores)); */
 
 //Ejercios
 
-const productos = [
+/* const productos = [
     {
       id: 1,
       nombre: "papitas francesas",
@@ -110,7 +110,7 @@ const productos = [
         },
       ],
     },
-  ];
+  ]; */
   
   // ejercicios
   
@@ -166,3 +166,46 @@ console.log(GetOrderByUser(ordenes, 3))
   //  funcion que retorne el usuario que mas ha gastado en nuestra app
   
 
+  const users = [
+    { firstName: "Bradley", lastName: "Bouley", role: "Full Stack Resident" },
+    { firstName: "Chloe", lastName: "Alnaji", role: "Full Stack Resident" },
+    { firstName: "Jonathan", lastName: "Baughn", role: "Enterprise Instructor" },
+    { firstName: "Michael", lastName: "Herman", role: "Lead Instructor" },
+    { firstName: "Robert", lastName: "Hajek", role: "Full Stack Resident" },
+    { firstName: "Wes", lastName: "Reid", role: "Instructor" },
+    { firstName: "Zach", lastName: "Klabunde", role: "Instructor" },
+  ];
+  
+  // funcion que retorne un array con los textos
+  //["Bradley Bouley is a Full Stack Resident" ]
+/*   const GetDescription = (array) => {
+    return array.map((element) => {
+      return `${element.firstName} ${element.lastName} is a ${element.role}`;
+    })
+  }
+  
+  console.log(GetDescription(users)); */
+
+  // funcion que traiga usuarios por rol
+  // traerUsuariosPorRol('Instructor')//
+
+/*   const GetByRol = (array, role) => {
+    return array.filter((element) => element.role == role);
+  }
+
+  console.log(GetByRol(users, "Instructor")) */
+  
+  // una funcion que use prompt e inserte nuevos registros a usuario
+
+const AddUser = (array) => {
+    const userFields = ['firstName', 'lastName', 'role'];
+    const newObject = {}
+    userFields.map((element) => {
+      newObject[element] = prompt(`Please add a ${element}`);
+    })
+    array.push(newObject);
+    return newObject
+  }
+
+  console.log(AddUser(users))
+  console.log(users)
