@@ -115,7 +115,36 @@ const ordenes = [
 // precioTotal: 23000
 //}
 
-// una funcion que retornde los pedidos de un usuario
+//susana
+const calcularPrecioOrden = (idBuscar) => {
+  let precio = 0;
+  const orden = ordenes.find((o) => {
+    return o.id == idBuscar;
+  });
+
+  orden.productos.forEach((element) => {
+    const prod = productos.find((p) => {
+      return p.id == element.idProducto;
+    });
+    precio += prod.precio * element.cantidad;
+  });
+
+  return precio;
+};
+//console.log(calcularPrecioOrden(2));
+//jose moreno
+
+const GetTotalOrder = (array, id) => {
+  const order = array.find((element) => element.id == id);
+  return order.productos.reduce((acc, curr) => {
+    const currProduct = productos.find((prod) => prod.id == curr.idProducto);
+    return (acc += currProduct.precio * curr.cantidad);
+  }, 0);
+};
+
+console.log(GetTotalOrder(ordenes, 2));
+
+// una funcion que retorne los pedidos de un usuario
 // traerPedidosUsario (idUsuario)
 
 // [
@@ -130,6 +159,47 @@ const ordenes = [
 //         }]
 //     }
 // ]
+
+const traerPedidosUsuario = (idUsuario) => {
+  const ordenesUsuario = ordenes.filter(
+    (orden) => orden.idUsuario == idUsuario
+  );
+
+  return ordenesUsuario.map((orden) => {
+    return {
+      ...orden,
+      productos: orden.productos.map((prod) => {
+        return {
+          cantidad: prod.cantidad,
+          producto: productos.find((pro) => pro.id == prod.idProducto),
+        };
+      }),
+    };
+  });
+};
+console.log(traerPedidosUsuario(1));
+
+//Daniel Gallo
+
+const traerPedidosUsuario = (userId) => {
+  return ordenes
+    .filter((order) => order.idUsuario == userId)
+    .map(({ idUsuario, productos: productosOrden, ...infoOrder }) => {
+      return {
+        ...infoOrder,
+        productos: productosOrden.map(({ idProducto, cantidad }) => {
+          const productoEncontrado = productos.find(
+            (pro) => pro.id === idProducto
+          );
+          return {
+            ...productoEncontrado,
+            cantidad,
+            total: productoEncontrado.precio * cantidad,
+          };
+        }),
+      };
+    });
+};
 
 //funcion que retorne el promedio de gasto de un usuario
 
