@@ -178,6 +178,29 @@ const traerPedidosUsuario = (idUsuario) => {
   });
 };
 console.log(traerPedidosUsuario(1));
+
+//Daniel Gallo
+
+const traerPedidosUsuario = (userId) => {
+  return ordenes
+    .filter((order) => order.idUsuario == userId)
+    .map(({ idUsuario, productos: productosOrden, ...infoOrder }) => {
+      return {
+        ...infoOrder,
+        productos: productosOrden.map(({ idProducto, cantidad }) => {
+          const productoEncontrado = productos.find(
+            (pro) => pro.id === idProducto
+          );
+          return {
+            ...productoEncontrado,
+            cantidad,
+            total: productoEncontrado.precio * cantidad,
+          };
+        }),
+      };
+    });
+};
+
 //funcion que retorne el promedio de gasto de un usuario
 
 // funcion que retorne el producto mas pedido
